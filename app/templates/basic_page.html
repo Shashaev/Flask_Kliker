@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>number {{old_number}}</title>
+    <link rel="icon" href="static/images/number_1000.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="static/m.css" rel="stylesheet">
+</head>
+<body>
+    <div class="m_b">
+        <h1 class="text-center">Доберитесь до конца</h1>
+        <img class="rounded mx-auto d-block" src="{{src}}" height="150px" vspace="50">
+        <div class="d-grid gap-2 col-5 mx-auto">
+            <a class="btn btn-success btn-lg" href="{{ url_for('get_image_page', number=number) }}" role="button">Клик</a>
+        </div>
+    </div>
+</body>
+</html>
